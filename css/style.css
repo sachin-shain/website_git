@@ -502,3 +502,80 @@
         /* smooth animation */
     }
 }
+
+
+/*========== Marthomex and logo =========*/
+
+/* header style */
+#title_marthomex {
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    background: transparent;
+    padding: 10px 0px;
+    margin: 10px;
+
+}
+
+#title_marthomex .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#title_marthomex .logo h1 {
+    font-family: 'Monoton', cursive;
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 0;
+    color: rgb(255, 255, 0);
+    letter-spacing: 2px;
+}
+
+#title_marthomex .logo h2 {
+    margin: 0 0 0 0;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: rgb(255, 255, 0);
+
+    letter-spacing: 1.8px;
+    font-family: sans-serif;
+}
+
+#title_marthomex .logo img {
+    width: 10%;
+    height: auto;
+}
+
+
+#title_marthomex .logo .title-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* ========= Mobile (max-width: 600px) ========= */
+@media (max-width: 600px) {
+
+    #title_marthomex {}
+
+
+    #title_marthomex .logo h1 {
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+    }
+
+    #title_marthomex .logo h2 {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+
+    #title_marthomex .logo img {
+        width: 22%;
+        height: auto;
+    }
+
+
+}
