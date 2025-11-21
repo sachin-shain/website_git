@@ -1,0 +1,13 @@
+/* ========= Mobile (max-width: 600px) ========= */
+@media (max-width: 600px) {
+
+    section {
+        max-width: 100%;
+        width: 98%;
+        margin: 1px;
+    }
+}
+
+
+/* ========= Mobile (max-width: 600px) ========= */
+@media (max-width: 600px) {}
