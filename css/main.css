@@ -143,7 +143,7 @@ section {
     max-width: 90%;
     background-color: rgb(247 241 222);
     color: black;
-    margin: 3vh auto;
+    margin: 30px auto;
     border-radius: 10px;
     box-shadow: 0 0 8px rgba(255, 255, 25, 0.6);
     padding: 0 30px 30px 30px;
@@ -168,6 +168,19 @@ section p {
 }
 
 
+/* ========= Mobile (max-width: 600px) ========= */
+@media (max-width: 600px) {
+
+    section {
+        margin: 30px auto;
+        padding: 0 15px 15px 15px;
+    }
+
+    section p {
+        font-size: 1em;
+    }
+
+}
 
 /*========== footer =========*/
 
