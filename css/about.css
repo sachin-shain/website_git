@@ -1,7 +1,14 @@
-/*========== About us =========*/
 #about_us,
 #principal_section {
     width: 85%;
+}
+
+#about_reg_button {
+    background: red;
+}
+
+#about_reg_button:hover {
+    background: #cc0000;
 }
 
 #about_us h1,
@@ -26,22 +33,14 @@
     display: block;
 }
 
-/* Link styling for MTCW Perumbavoor */
-#about_us .mtcw-link {
-    background: red;
-    color: white;
-    padding: 4px 10px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 600;
-    margin-left: 6px;
-    transition: 0.2s ease;
-    white-space: nowrap;
-    /* prevents breaking into a new line */
-}
 
-#about_us .mtcw-link:hover {
-    background: #cc0000;
+/* ========= Mobile (max-width: 600px) ========= */
+@media (max-width: 600px) {
+
+    section {
+        max-width: 100%;
+        width: 80%;
+    }
 }
 
 /*========== principal message =========*/
@@ -63,11 +62,8 @@
     width: 400px;
     height: 400px;
     object-fit: cover;
-    /* ensures perfect circular crop */
     border-radius: 50%;
-    /* makes it circular */
     border: 4px solid #fff;
-    /* optional white border */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
@@ -81,13 +77,6 @@
     margin-bottom: 12px;
     line-height: 1.6;
 }
-
-/* #about #regards,
-#about #signature,
-#about #prof_letha,
-#about #general_convenor {
-
-} */
 
 #about #regards {
     text-align: right;
@@ -108,15 +97,27 @@
 
 #signature-wrapper {
     text-align: right;
-    /* pushes image to right */
     margin-right: -30px;
-    /* adjust so it visually centers above name */
     margin-bottom: -30px;
-    /* reduces vertical gap */
-
     margin-top: -40px;
 }
 
 #signature {
     width: 250px;
+}
+
+/* ========= Mobile (max-width: 600px) ========= */
+@media (max-width: 600px) {
+    #principal_section .principal-container {
+        flex-direction: column;
+    }
+
+    #principal_section .principal-photo img {
+        width: 200px;
+        height: 200px;
+    }
+
+    #signature {
+        width: 150px;
+    }
 }

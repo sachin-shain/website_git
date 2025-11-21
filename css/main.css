@@ -30,8 +30,6 @@ header.main {
     padding: 1rem 2rem;
     background-color: rgb(6, 23, 31);
     color: white;
-    /* flex-wrap: wrap; */
-
 }
 
 /*========== header: main =========*/
@@ -53,24 +51,10 @@ header.main {
     line-height: 1.0;
 }
 
-
-/*========== top heading: main-2 =========*/
-
-/* .logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.logo img {
+.subpage img {
+    width: 100px;
     height: auto;
-    width: 5%;
 }
-
-.logo h1 {
-    margin: 0;
-    font-size: 1.8rem;
-} */
 
 
 
@@ -95,6 +79,10 @@ header.main {
     text-decoration: underline;
 }
 
+#marthomex_top_heading {
+    width: 100px;
+    height: auto;
+}
 
 /* ========= Mobile (max-width: 600px) ========= */
 @media (max-width: 600px) {
@@ -114,6 +102,11 @@ header.main {
         /* smaller logo */
     }
 
+    #marthomex_top_heading {
+        width: 90px;
+        height: auto;
+    }
+
     .logo h1 {
         font-size: 1rem;
         max-width: 240px;
@@ -131,6 +124,10 @@ header.main {
     .nav_main a {
         margin: 6px 0;
         font-size: .8rem;
+    }
+
+    .subpage {
+        width: 110px;
     }
 }
 
@@ -233,5 +230,43 @@ footer a:hover {
     footer .logo h1 {
         font-size: .8rem;
         line-height: 1.5;
+    }
+}
+
+
+
+.homepage-reg-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0077ff;
+    /* blue */
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    /* smooth animation */
+}
+
+.homepage-reg-btn:hover {
+    background: #32639a;
+    transform: scale(1.06);
+}
+
+/* ========= Mobile (max-width: 600px) ========= */
+@media (max-width: 600px) {
+    .homepage-reg-btn {
+        display: inline-block;
+        padding: 5px 15px;
+        background: #0077ff;
+        /* blue */
+        color: white;
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        /* smooth animation */
     }
 }
