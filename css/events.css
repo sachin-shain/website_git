@@ -1,13 +1,109 @@
 /* ========= Mobile (max-width: 600px) ========= */
 @media (max-width: 600px) {
 
-    section {
+    #events .events-format {
         max-width: 100%;
         width: 98%;
         margin: 1px;
+        margin-right: auto;
+        margin-left: auto;
     }
 }
 
+#events .events-format {
+    width: 75%;
+    max-width: 90%;
+}
+
+
+/* Event Card: stack text and image vertically */
+.event-card-program {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffffdd;
+    border-radius: 18px;
+    padding: 25px;
+    margin: 25px auto;
+    width: 85%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.27);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+
+/* Left Text Column */
+.event-card-program .event-info {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+}
+
+.event-card-program .event-image {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.event-card-program .event-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+}
+
+#valedictory-image {
+    max-width: 100%;
+    width: 80%;
+    height: auto;
+}
 
 /* ========= Mobile (max-width: 600px) ========= */
-@media (max-width: 600px) {}
+@media (max-width: 600px) {
+
+
+
+    #events .events-format {
+        width: 95%;
+        max-width: 100%;
+    }
+
+
+    /* Event Card: stack text and image vertically */
+    .event-card-program {
+        border-radius: 10px;
+        padding: 10px;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+
+    /* Left Text Column */
+    .event-card-program .event-info {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .event-card-program .event-image {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .event-card-program .event-image img {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        border-radius: 16px;
+        object-fit: cover;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+    }
+
+    #valedictory-image {
+        max-width: 100%;
+        width: 80%;
+        height: auto;
+    }
+
+
+}
