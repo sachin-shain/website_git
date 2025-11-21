@@ -439,11 +439,6 @@
   height: 100%;
 }
 
-@media (max-width: 768px) {
-  .three-box {
-    flex-direction: column;
-  }
-}
 
 .three-box .s1 {
   width: 40%;
