@@ -174,6 +174,8 @@ section p {
     section {
         margin: 30px auto;
         padding: 0 15px 15px 15px;
+        max-width: 80%;
+        width: 90%;
     }
 
     section h1 {
@@ -181,7 +183,7 @@ section p {
     }
 
     section p {
-        font-size: 1rem;
+        font-size: 14px;
         line-height: 1.5;
     }
 
@@ -224,4 +226,12 @@ footer a:visited {
 footer a:hover {
     text-decoration: underline;
     color: #ffd700;
+}
+
+/* ========= Mobile (max-width: 600px) ========= */
+@media (max-width: 600px) {
+    footer .logo h1 {
+        font-size: .8rem;
+        line-height: 1.5;
+    }
 }
