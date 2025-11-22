@@ -280,3 +280,170 @@
         margin: 5px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact {
+    width: 50%;
+}
+
+
+.faculty-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.faculty-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #cddccc;
+    font-size: 1.2rem;
+}
+
+.faculty-list li:last-child {
+    border-bottom: none;
+}
+
+.faculty-list .name {
+    font-weight: 600;
+}
+
+.faculty-list .phone {
+    font-size: 1.2rem;
+    font-family: monospace;
+    color: #004d26;
+}
+
+
+.sponsor-images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 30px;
+    /* flex-wrap: wrap; */
+    /* allows wrapping */
+    /* gap: 5%; */
+    /* spacing between logos */
+    /* padding: 10px 0; */
+    /* margin: 0; */
+    /* margin-bottom: 0; */
+}
+
+.sponsor-images img {
+    /* height: 15vh; */
+    /* good readable size */
+    width: auto;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin: 20px;
+    margin-bottom: -10px;
+}
+
+.partner-row {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.partner-row>section {
+    flex: 1;
+    /* makes both sections equal width */
+    display: flex;
+    /* lets height stretch automatically */
+}
+
+
+.sponsor-images {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.sponsor-images img {
+    height: 100px;
+    width: auto;
+}
+
+.partner-row {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+    /* IMPORTANT — makes all children equal height */
+}
+
+.partner-row .events-format {
+    flex: 1;
+    /* both take equal width */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* optional but keeps spacing neat */
+    /* background: rgba(255, 255, 255, 0.05); */
+    padding: 0px;
+    border-radius: 10px;
+    background: #ffffffdd;
+}
+
+#media_partner {
+    margin: auto
+}
+
+/* ========= Mobile (max-width: 600px) ========= */
+/* Mobile width fix for contact page */
+@media (max-width: 600px) {
+    body#contacts section {
+        width: 99% !important;
+        max-width: 99% !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
