@@ -1,4 +1,6 @@
-.events-format {
+.events-format,
+#registration_competition,
+#registration_school {
     width: 75%;
     max-width: 90%;
 }
@@ -94,44 +96,12 @@
 .event-info .event_heading h2 {
     font-size: 1.8rem;
     color: #004aad;
-    color: orange;
     margin-bottom: 10px;
     display: flex;
     align-items: center;
     gap: 10px;
     text-align: left;
 }
-
-/* .event-info h3 {
-    font-size: 1.8rem;
-    color: #004aad;
-    margin-bottom: 20px;
-    margin-left: 40px;
-    margin-top: 0px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    text-align: left;
-} */
-
-/* .event-info h4 {
-    font-size: 1.8rem;
-    color: #004aad;
-    margin-bottom: 20px;
-    margin-left: 40px;
-    margin-top: 0px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    text-align: left;
-    font-family: 'MalayalamFont', sans-serif;
-} */
-
-/* .event-info h2 i,
-.event-info h2 span {
-    font-size: 1.9rem;
-    color: orange;
-} */
 
 .event-info p {
     font-size: 1.1rem;
@@ -201,12 +171,15 @@
 /* ========= Mobile (max-width: 600px) ========= */
 @media (max-width: 600px) {
 
-    .events-format {
+    .events-format,
+    #registration_competition,
+    #registration_school {
         max-width: 100%;
         width: 98%;
-        margin: 1px;
+        margin: 20px;
         margin-right: auto;
         margin-left: auto;
+
     }
 
     .event-info h2,
@@ -246,5 +219,64 @@
 
     .event-card .deadline {
         font-size: .8rem;
+    }
+}
+
+
+.btn-row {
+    display: flex;
+    gap: 90px;
+    /* Space between Register and Rules */
+    margin-top: 20px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+
+.btn-row .reg-btn,
+.btn-row .rules-btn,
+#registration_school #school-reg-btn {
+    display: inline-block;
+    background: #1d6dd5;
+    color: white;
+    padding: 14px 28px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.btn-row .reg-btn:hover,
+#registration_school #school-reg-btn:hover {
+    background: #1556ac;
+    transform: scale(1.05);
+}
+
+
+.btn-row .rules-btn {
+    background: #FF6C0C;
+}
+
+.btn-row .rules-btn:hover {
+    background: #BF1A1A;
+    transform: scale(1.05);
+}
+
+
+/* ========= Mobile (max-width: 600px) ========= */
+@media (max-width: 600px) {
+
+    .btn-row {
+        margin-top: 15px;
+    }
+
+
+    .btn-row .reg-btn,
+    .btn-row .rules-btn,
+    #registration_school #school-reg-btn {
+        padding: 10px 15px;
+        font-size: .9rem;
+        margin: 5px;
     }
 }
